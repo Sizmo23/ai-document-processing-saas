@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthAPI {
     @GetMapping("/api/health")
     public String health() {
-        return "Backend is healthy! Anas Alhajri Ul hasan Alshammari";
+        return "Backend is healthy! Less goooooo";
     }
 }
