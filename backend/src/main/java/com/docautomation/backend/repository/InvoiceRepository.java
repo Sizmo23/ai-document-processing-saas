@@ -1,0 +1,12 @@
+package com.docautomation.backend.repository;
+
+import com.docautomation.backend.entity.Invoice;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+import java.util.UUID;
+
+public interface InvoiceRepository extends JpaRepository<Invoice, UUID> {
+    boolean existsByInvoiceNumber(String invoiceNumber);
+    List<Invoice> findByDocumentId(UUID documentId);
+}
